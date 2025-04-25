@@ -63,3 +63,11 @@ A tela principal mostra uma lista com as criptomoedas, e cada item da lista exib
 Apesar da UI principal ter sido construída com Jetpack Compose, ainda usamos alguns arquivos XML, como o `AndroidManifest.xml`, que é essencial para configurar permissões (por exemplo, acesso à internet) e definir a `MainActivity`. Além disso, alguns recursos visuais como cores e temas ainda são definidos via XML nos diretórios `res/values`.
 
 ---
+## Exemplo visual:
+
+- Imagem da tela inicial do app, ao clicar no botão "Atualizar", as informações relacionadas a cotação do bitcoin são renderizadas
+  
+![image](https://github.com/user-attachments/assets/dde3ee1e-9250-4e75-b10d-36ca0fba0a0e)
+
+![image](https://github.com/user-attachments/assets/8783f4d0-5106-439c-89a6-cb568049552f)
+
