@@ -4,7 +4,8 @@ package julia.com.github.android_crypto_monitor
         val ticker: Ticker
     )
 
-    class Ticker(
+    //passa pelo construtor
+class Ticker(
         val high: String,
         val low: String,
         val vol: String,
