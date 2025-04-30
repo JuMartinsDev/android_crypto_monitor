@@ -1,6 +1,6 @@
 # 📱 Android Crypto Monitor
 
-O **Android Crypto Monitor**, é um aplicativo  em Kotlin que tem como objetivo exibir a cotação atual do Bitcoin utilizando boas práticas, consumo de APIs com Retrofit e uma interface.
+É um aplicativo  em Kotlin que tem como objetivo exibir a cotação atual do Bitcoin utilizando boas práticas, consumo de APIs com Retrofit e uma interface.
 
 ---
 
