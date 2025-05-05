@@ -26,7 +26,7 @@ Em resumo: a API fornece os dados, o Retrofit faz a ponte entre a internet e o a
 
 ---
 
-## 💼 Service - Como o app conversa com a API?
+## 💼 Service 
 
 A camada `service` contém a interface `CryptoApiService`, que define exatamente como o app vai se comunicar com a API. Ali estão os métodos que representam as requisições que o aplicativo pode fazer. Essa interface é interpretada pelo Retrofit, que constrói tudo por trás — desde abrir a conexão até lidar com a resposta e erros.
 
@@ -34,7 +34,7 @@ Separar essa camada é uma boa prática porque desacopla o código da rede do re
 
 ---
 
-## 🧾 Model - Onde os dados ganham forma
+## 🧾 Model
 
 A camada `model` contém as classes que representam os dados recebidos da API. Por exemplo, a classe `CryptoCurrency` possui os mesmos atributos que vêm na resposta JSON — como nome, símbolo e valor atual.
 
@@ -58,7 +58,7 @@ A tela principal mostra uma lista com as criptomoedas, e cada item da lista exib
 
 ---
 
-## 🧾 Android XML?
+## 🧾 Android XML
 
 Apesar da UI principal ter sido construída com Jetpack Compose, ainda usamos alguns arquivos XML, como o `AndroidManifest.xml`, que é essencial para configurar permissões (por exemplo, acesso à internet) e definir a `MainActivity`. Além disso, alguns recursos visuais como cores e temas ainda são definidos via XML nos diretórios `res/values`.
 
