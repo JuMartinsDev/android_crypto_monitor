@@ -63,6 +63,73 @@ A tela principal mostra uma lista com as criptomoedas, e cada item da lista exib
 Apesar da UI principal ter sido construída com Jetpack Compose, ainda usamos alguns arquivos XML, como o `AndroidManifest.xml`, que é essencial para configurar permissões (por exemplo, acesso à internet) e definir a `MainActivity`. Além disso, alguns recursos visuais como cores e temas ainda são definidos via XML nos diretórios `res/values`.
 
 ---
+
+## 🔗 API Utilizada
+A cotação é obtida através da seguinte API pública:
+
+https://www.mercadobitcoin.net/api/BTC/ticker/
+
+---
+
+## 🌐 Integração com API REST
+A aplicação se comunica com a API via protocolo HTTP, utilizando:
+
+HTTP: GET para buscar os dados da moeda;
+
+Formato de Resposta: JSON;
+
+Biblioteca Retrofit: para facilitar a comunicação com a API;
+
+Conversor Gson: para transformar os dados JSON em objetos Kotlin.
+
+---
+
+## ⚙️ Funcionamento
+Ao pressionar o botão "Atualizar", o app:
+
+Envia uma requisição GET para a API;
+
+Recebe os dados da cotação em JSON;
+
+Converte os dados para objetos Kotlin (ex: TickerResponse);
+
+Exibe o valor do Bitcoin formatado em real (R$) e a data/hora atual da cotação.
+
+---
+
+## 🛠️ Tecnologias e Bibliotecas
+
+Kotlin
+
+Retrofit (2.9.0) → Comunicação HTTP com a API
+
+Gson Converter → Conversão de JSON para objetos Kotlin
+
+Coroutines → Execução assíncrona para não travar a interface
+
+AndroidX & AppCompat → Compatibilidade com dispositivos modernos
+
+Activity-KTX → Extensões para facilitar o código Android
+
+## 📡 Configuração da Requisição
+Interface: MercadoBitcoinService
+
+Fábrica de serviço: MercadoBitcoinServiceFactory, responsável por instanciar o Retrofit e definir a base da URL.
+
+Retrofit.Builder()
+    .baseUrl("https://www.mercadobitcoin.net/")
+    .addConverterFactory(GsonConverterFactory.create())
+    .build()
+---
+
+### 🎨 Interface do Usuário
+Textos centralizados no arquivo strings.xml, facilitando manutenção e tradução;
+
+Layout estruturado em activity_main.xml com LinearLayout vertical;
+
+Uso de componentes modulares via <include>.
+
+---
 ## Exemplo visual:
 
 - Imagem da tela inicial do app, ao clicar no botão "Atualizar", as informações relacionadas a cotação do bitcoin são renderizadas
