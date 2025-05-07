@@ -6,7 +6,29 @@
 
 ## 🧠 Sobre o Projeto
 
-O objetivo é criar uma ferramenta simples e funcional, para acompanhar as variações do Bitcoin no mercado. O usuário pode visualizar as informações mais relevantes como nome da moeda e valor atual.
+O Android Crypto Monitor é um aplicativo desenvolvido em Kotlin com o objetivo principal de exibir em tempo real a cotação atual do Bitcoin, utilizando boas práticas de desenvolvimento Android, consumo eficiente de APIs REST e uma interface amigável ao usuário.
+
+A proposta do projeto é criar uma ferramenta prática, educativa e funcional, que permita ao usuário acompanhar de forma rápida as variações do Bitcoin no mercado brasileiro. Com apenas um toque, é possível visualizar os dados mais relevantes, como o valor atual da moeda em reais (R$) e a data/hora da última atualização.
+
+Além da funcionalidade em si, o aplicativo serve como um exemplo de arquitetura limpa e modularizada no Android, separando claramente cada responsabilidade em diferentes camadas:
+
+-> Model (dados): estrutura os dados recebidos da API.
+
+-> Service (rede): cuida da comunicação com a internet.
+
+-> ViewModel (lógica de tela): gerencia o estado e a lógica de apresentação.
+
+-> UI (interface): exibe os dados de forma clara e responsiva ao usuário.
+
+Outro objetivo importante é explorar e aplicar conceitos modernos do ecossistema Android, como:
+
+O uso do Retrofit, uma das bibliotecas mais populares para consumo de APIs REST;
+
+A implementação de chamadas assíncronas com Kotlin Coroutines, garantindo fluidez na interface sem travamentos;
+
+A separação clara de responsabilidades, seguindo os princípios da arquitetura MVVM (Model-View-ViewModel);
+
+A introdução de componentes Jetpack modernos, combinados com elementos XML ainda fundamentais no desenvolvimento Android.
 
 ---
 
