@@ -50,14 +50,6 @@ Essa camada ajuda a manter a interface limpa e focada apenas em exibir os dados,
 
 ---
 
-## 🎨 UI - Interface com Jetpack Compose
-
-A interface foi feita utilizando **Jetpack Compose**, que é uma forma moderna de construir telas no Android diretamente com código Kotlin. Compose facilita a criação de layouts reativos, ou seja, se os dados mudam (como o valor de uma criptomoeda), a tela é automaticamente atualizada.
-
-A tela principal mostra uma lista com as criptomoedas, e cada item da lista exibe o nome da moeda, seu símbolo e o valor atualizado em tempo real. A tela se comunica diretamente com o ViewModel, que fornece os dados prontos para serem exibidos.
-
----
-
 ## 🧾 Android XML
 
 Apesar da UI principal ter sido construída com Jetpack Compose, ainda usamos alguns arquivos XML, como o `AndroidManifest.xml`, que é essencial para configurar permissões (por exemplo, acesso à internet) e definir a `MainActivity`. Além disso, alguns recursos visuais como cores e temas ainda são definidos via XML nos diretórios `res/values`.
